@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gradient-to-r from-blue-950 to-slate-800 px-8 py-8">
+    <div class="containers font-sans text-white">
+      <!-- heading -->
+      <h1 class="font-bold text-5xl tracking-wider text-center">
+        Rock Paper Scissor
+      </h1>
+
+      <!-- show score -->
+      <div class="flex justify-between max-w-md mx-auto mt-10">
+        <section class="font-semibold text-center space-y-3">
+          <p class="text-3xl">You</p>
+          <p class="text-2xl player">0</p>
+        </section>
+
+        <section class="space-y-3 font font-semibold text-center">
+          <p class="text-3xl">Computer</p>
+          <p class="text-2xl computer">0</p>
+        </section>
+      </div>
+
+      <!-- chooseyourmove and game over-->
+      <div class="gaming-section mt-32">
+        <!-- chooseyourmove -->
+        <section class="choose-move text-center">
+          <h2 class="text-3xl font-bold">Choose your move</h2>
+          <p class="font-medium mt-3">
+            Moves Left: <span class="moves-left">10</span>
+          </p>
+          <p class="font-semibold mt-4">
+            Computer Move: <span class="computer-move"></span>
+          </p>
+
+          <div
+            class="buttons-section flex justify-between mt-24 max-w-lg mx-auto"
+          >
+            <button class="rock-btn">Rock</button>
+            <button class="scissors-btn">Scissors</button>
+            <button class="paper-btn">Paper</button>
+          </div>
+          <!-- result -->
+          <h1 class="italic text-2xl mt-8"></h1>
+        </section>
+
+        <!-- game over -->
+        <section class="game-over text-center hidden">
+          <h2 class="font-bold text-4xl">Game over!!</h2>
+
+          <h3 class="who-won mt-12 text-3xl italic text-green-300"></h3>
+          <button class="mt-8 restart-btn">Restart</button>
+        </section>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>

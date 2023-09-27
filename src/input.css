@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  @apply bg-cyan-600 shadow-md shadow-gray-900 px-6 rounded-lg font-medium hover:opacity-80 transition-all duration-200 py-2;
+}
